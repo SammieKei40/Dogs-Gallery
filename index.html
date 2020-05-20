@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Sammie's Pet</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    <style>body {
+  background-image: url("Dog1.gif");");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+</style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="#" class="logo">Sammie's Pet</a>
+            <div class="header-right">
+              <a class="active" href="index.html">Home</a>
+              <a href="gallery.html">Dogs Gallery</a>
+	      <a href="Facinating Videos.html">Facinating Videos</a>
+            </div>
+          </div> 
+        <main id="container">
+            <h2 style="text-align: center;">Welcome to Dogs World</h2>
+            <div class="slideshow-container">
+                <div class="mySlides bold">
+                <div class="numbertext">1 / 9</div>
+                <img src="Image1.jpg" style="width:100%">
+                <div class="text">Caption One</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 9</div>
+                <img src="Image2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 9</div>
+                <img src="Image3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+                </div>
+
+		<div class="mySlides fade">
+                <div class="numbertext">4 / 9</div>
+                <img src="Image4.jpg" style="width:100%">
+                <div class="text">Caption Four</div>
+                </div>
+
+		<div class="mySlides fade">
+                <div class="numbertext">5 / 9</div>
+                <img src="Image5.jpg" style="width:100%">
+                <div class="text">Caption Five</div>
+                </div>
+
+		<div class="mySlides fade">
+                <div class="numbertext">6 / 9</div>
+                <img src="Image6.jpg" style="width:100%">
+                <div class="text">Caption Six</div>
+                </div>
+
+		<div class="mySlides fade">
+                <div class="numbertext">7 / 9</div>
+                <img src="Image7.jpg" style="width:100%">
+                <div class="text">Caption Seven</div>
+                </div>
+
+		<div class="mySlides fade">
+                <div class="numbertext">8 / 9</div>
+                <img src="Golden Retriever 2.jpg" style="width:100%">
+                <div class="text">Caption Eight</div>
+                </div>
+
+		<div class="mySlides fade">
+                <div class="numbertext">9 / 9</div>
+                <img src="German Shepherd 2.jpg" style="width:100%">
+                <div class="text">Caption Nine</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+		<span class="dot" onclick="currentSlide(6)"></span>
+		<span class="dot" onclick="currentSlide(7)"></span>
+		<span class="dot" onclick="currentSlide(8)"></span>
+		<span class="dot" onclick="currentSlide(9)"></span>
+            </div> 
+            <div class="textings">
+                <h2 style="text-align: center;">Dogs As A Pet</h2>
+                <p style="text-align: center; font-size: 19px; margin: 10px;">Pets are seen in lots of families almost every part of the world, especially in the western part of the earth. Pets include a lot like dogs, cats etc. Dog helps people in many ways like herding, protection, military, hunting, and assisting apolice. Even it is called the best friend of man in the western world. Here we list out 25 Friendly and Intelligent types of dogs in the world and their names with images.</p>
+                <p style="text-align: center;  font-size: 19px; margin: 10px;">Dogs (Canis lupus familiaris) are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated. ... They are a popular pet because they are usually playful, friendly, loyal and listen to humans.</p>
+            </div>
+        </main>
+        <footer id="footer">   
+            <div copyright>
+                <p style="text-align: center;"><small>&copy; 2020<br> All Rights Reserved. <br>
+                Designed by <a href="www.github.com" target="">Sammie Kei</a></small></p>
+            </div>
+        </footer>
+    </body>
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+    </script>
+</html>/
